@@ -2,10 +2,10 @@
 
 Forked from: https://github.com/NeowayLabs/jobs/blob/master/datapirates/challengePirates.md
 
-##Visão geral
+## Visão geral
 
 
-##Requisitos:
+## Requisitos:
 * Python 3.6;
 * Navegador Chrominum;
 * Pycharm (utilizada versão 2018.3 Community)
@@ -14,7 +14,7 @@ Forked from: https://github.com/NeowayLabs/jobs/blob/master/datapirates/challeng
 	* Beautifulsoup (pip install beautifulsoup4), 
 	* requests (pip install requests)
 
-##Como Utilizar
+## Como Utilizar
 * Fazer a cópia do projeto a partir do repositório;
 * No Pycharm, carregar o projeto (File -> Open) e navegar até o path;
 * Na classe app.py, clique com o botão direito e selecione a opção Run'app'.
