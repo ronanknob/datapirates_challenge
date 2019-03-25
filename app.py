@@ -11,7 +11,7 @@ import jsonlines
 # Lista final que guardará as tuplas de resultado
 registros_arr = []
 # Inserindo primeira tupla (pode ser usada como cabeçalho no import)
-tupla1 = ("Localidade", "Faixa de CEP")
+tupla1 = ("UF", "Localidade", "Faixa de CEP")
 registros_arr.append(tupla1)
 
 # Construindo tabela de UF's com base na disponibilizada no site
@@ -84,10 +84,10 @@ for x in range(0, 2, 1):  # Executa com as primeiras 2 UF's da lista
         total_linhas = len(faixas) # faixas não possui repetições
         localidades_pos = 0
         faixas_pos = 0
-        for x in range(0, total_linhas, 1):
+        for z in range(0, total_linhas, 1):
             trim_faixas = str(faixas[faixas_pos].text)
             trim_faixas = trim_faixas.strip(" ")
-            tupla = (localidades[localidades_pos].text, trim_faixas)
+            tupla = (lista_estados[x], localidades[localidades_pos].text, trim_faixas)
             registros_arr.append(tupla)  # Incremento na lista global
             localidades_pos = localidades_pos + 2 # incrementa dois para pular informação de situação
             faixas_pos = faixas_pos + 1
@@ -109,7 +109,7 @@ for x in range(0, 2, 1):  # Executa com as primeiras 2 UF's da lista
             for z in range(0, total_linhas, 1):
                 trim_faixas = str(faixas[faixas_pos].text)
                 trim_faixas = trim_faixas.strip(" ")
-                tupla = (localidades[localidades_pos].text, trim_faixas)
+                tupla = (lista_estados[x], localidades[localidades_pos].text, trim_faixas)
                 registros_arr.append(tupla)  # Incremento na lista global
                 localidades_pos = localidades_pos + 2  # incrementa dois para pular informação de situação
                 faixas_pos = faixas_pos + 1
