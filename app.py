@@ -1,6 +1,5 @@
 # coding=utf-8
 import time
-
 import stringify as stringify
 from jsonlines.jsonlines import ReaderWriterBase
 from selenium import webdriver
@@ -14,7 +13,6 @@ import json
 
 # Lista final que guardará as tuplas de resultado
 registros_arr = []
-# Inserindo primeira tupla (pode ser usada como cabeçalho no import)
 
 # Construindo tabela de UF's com base na disponibilizada no site
 # obtendo dados do endereço
